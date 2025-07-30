@@ -1,0 +1,7 @@
+Grade  (18/20)
+
+This is a really ambitious project, and I commend the team for taking it on! I really appreciate the challenges you've faced with data cleaning and just wrangling this much data into shape.
+
+However, I'm not sure what you're predicting here or how you are setting up your model.  This stuff is really important for me to understand how you are approaching the problem. Is your DV every single fire?  Would it make more sense to try to do this as a regression, for example by modeling fire size, severity,rates over time, or even damage costs? 
+
+That being said, an F1-score of .88 is good (is this cross-validation, or a single train / test split?), but lacking a deeper understanding of your modeling problem it's hard for me to say exactly how good. So, I'd really like you to focus some attention on clarifying precisely what your model is doing, and making sure that it is of value to stakeholders. What does the person on the ground need to know? Note that it's probably not just a prediction "Yes" or "No" - it's probably more like a probability of a fire, estimate of size (presumably, we're not too worried about a local brush fire that burns an acre and then dies out), or damage projections. So, rather than focusing on pulling more data in, see if you can clarify your DV (target variable) and build something that's really going to benefit your stakeholder.

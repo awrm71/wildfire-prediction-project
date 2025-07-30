@@ -1,0 +1,5 @@
+You guys did a beautiful job here with an incredibly ambitious project.  I think you probably could have streamlined your process by modeling subsets of data early one to see what worked before getting into the full model - as you mentioned, when dealing with large amounts of data like this, processing time becomes a huge bottleneck, so your goal should always be to find simpler subproblems you can process to try to come up with feature sets that are going to give you good results that you would then apply to the full problem.  I'm not sure why your R^2 were so low, but the PCA / clustering methods were probably not powerful enough for your data, and with more sophisticated strategies you likely could have come up with some really good features.  
+
+Nonetheless, this is great work you should feel good about.
+
+20/20
