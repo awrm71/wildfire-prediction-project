@@ -70,7 +70,7 @@ Wildfire Predictor/
 └── Reports/
     ├── Proposal.md
     ├── Final_report.md
-    └── Checkpoints/
+    └── Checkpoints
 ```
 
 ---
