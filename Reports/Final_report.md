@@ -27,33 +27,33 @@ Our project leverages a combination of datasets designed to provide comprehensiv
 - **Summary**: This dataset includes detailed records of wildfire incidents across the U.S., spanning over 40 years. Features include fire sizes, locations, and dates of occurrence.  
 - **Data Characteristics**: The dataset consists of over 900,000 entries, with attributes such as the geographic location of the fire, the size in acres, and the time of occurrence. This breadth of data allows for a comprehensive understanding of historical wildfire patterns across different regions.  
 - **Visualization**
-  ![Original Fire Data](png/Fire_before.png)
+  ![Original Fire Data](../Images/Fire_before.png)
   
   *Figure 1: Histogram of fire sizes before applying a log scale transformation.*
   
-  ![Post Logged Fire Data](png/Fire-after.png)
+  ![Post Logged Fire Data](../Images/Fire-after.png)
   
   *Figure 2: Histogram of fire sizes after applying a double log scale transformation to better visualize the distribution.*
 
 ### 2. Climate and Weather Data  
-- **Source**: [PRISM Climate Group](png/https://prism.oregonstate.edu/)  
+- **Source**: [PRISM Climate Group](../Images/https://prism.oregonstate.edu/)  
 - **Summary**: This dataset provides high-resolution climate data, including average monthly temperatures and precipitation levels. The data is geospatially resolved to the nearest 2 miles, offering exceptional granularity for our analysis.  
 - **Data Characteristics**: Key features include minimum, maximum, and mean temperatures, along with monthly precipitation totals, enabling us to understand climate trends and their influence on wildfire risks.  
 - **Visualization**:  
-  ![Mean Temperature](png/meantemp.png)  
+  ![Mean Temperature](../Images/meantemp.png)  
 
   *Figure 3: Mean temperature distribution for July 2023 across U.S. counties.*
 
-  ![Precipitation](png/precipitation.png)  
+  ![Precipitation](../Images/precipitation.png)  
 
   *Figure 4: Monthly precipitation levels across the U.S. in March 2023.*  
 
 ### 3. Land Cover Data  
-- **Source**: [US Geological Survey (NLCD)](png/https://www.mrlc.gov/data/national-land-cover-database-nlcd-2021)  
+- **Source**: [US Geological Survey (NLCD)](../Images/https://www.mrlc.gov/data/national-land-cover-database-nlcd-2021)  
 - **Summary**: This dataset details the types of land cover across the U.S., including forests, grasslands, urban areas, and water bodies. This information helps identify areas where land cover types may contribute to wildfire risks.  
 - **Data Characteristics**: The data was provided as a zip folder containing multiple `.img` files for various land cover categories. The zip file was initially 27 GB and expanded to 227 GB after extraction. These files had to be collected and processed to prepare the data for use in our machine learning model.  
 - **Visualization**:  
-  ![Land Cover](png/Land-cover.png)  
+  ![Land Cover](../Images/Land-cover.png)  
 
   *Figure 5: Land cover types across the U.S., visualized using updated NLCD colors.*  
 
@@ -176,7 +176,7 @@ Several iterations of RFE were run to maximize the F1 score. Each random forest 
 - **Recall:** `0.640`  
 - **ROC AUC Score:** `0.962`  
 
-   ![RFE Feature Selection](png/RFE_feature2.png)  
+   ![RFE Feature Selection](../Images/RFE_feature2.png)  
   *Figure 6: Line chart showing optimized amount of Features using RFE. F1 scores are lower as the model uses the base Random Forest Model instead of the optimized one.*
 
 Results saved in: `fire_predicting_model.ipynb`
@@ -188,7 +188,7 @@ The most important features identified were:
 
 The table of features is below
 
-![RFE Feature Importance](png/feature_importance.png)  
+![RFE Feature Importance](../Images/feature_importance.png)  
   *Figure 7: Table rankings the catagories used by their importance*
 
 
