@@ -57,9 +57,11 @@ Due to size constraints, raw data is not stored here. Use the links above to acc
 
 ## Repository Structure
 
+```
 
 Wildfire Predictor/ │ ├── README.md ├── Images/                    # All plots and visualizations ├── Notebooks/ │   ├── 01\_data\_cleaning/ │   ├── 02\_data\_merging/ │   ├── 03\_modeling/ │   └── 04\_exploration/ └── Reports/ ├── Proposal.md ├── Final\_report.md └── Checkpoints/
 
+```
 
 ---
 
